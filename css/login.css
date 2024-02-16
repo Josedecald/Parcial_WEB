@@ -1,0 +1,36 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+    background-color: #fafaf9;
+}
+
+.login-container{
+    position: relative;
+    width: 400px;
+    background-color: red;
+    border: 2px solid rgb(255, 255, 255, .6);
+    height: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-container h2 {
+    font-size: 2.3rem;
+    color: #fff;
+    text-align: center;
+}
+
+.input-container {
+    position: relative;
+    
+}
