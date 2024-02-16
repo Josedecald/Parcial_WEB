@@ -15,7 +15,7 @@ body{
     align-items: center;
     justify-content: space-between;
     height: 63px;
-    background: #ffe2ea;
+    background: #1c2338;
     position: fixed;
     width: 100%;
     z-index: 100;
@@ -32,7 +32,7 @@ body{
 
 .Logo a{
     text-decoration: none;
-    color: #000000;
+    color: #fff;
     text-transform: uppercase;
     font-size: 20px;
 
@@ -41,18 +41,18 @@ body{
 .navbar a{
     display: block;
     padding: 20px 20px;
-    color: #000000;
+    color: #fff;
     text-decoration: none;
     text-transform: uppercase;
     font-size: 20px;
-    border-radius: 20px;
+    border-radius: 10px;
     transition: all 0.3s ease;
 }
 
 .navbar a:hover{
-    background:#ffd1d1;
+    background:#434755;
     filter: blur(0);
-    transform: scale(1.3);
+    transform: scale(1.1);
 }
 
 .header{
@@ -74,22 +74,22 @@ body{
 p{
     margin-bottom: 40px;
     font-size: 18px;
-    color: #000000;
+    color: #fff;
     padding: 0 150px;
 }
+
 .btn{
     display: inline-block;
-    color: #000000;
+    color: #fff;
     margin-top: 15px;
     padding: 10px 40px;
-    border: 2px solid #FFBBCC;
     text-decoration: none;
-    background-color: #FFBBCC;
-    border-radius: 20px;
+    background-color: #1c2338;
+    border-radius: 10px;
     transition: all 0.3s ease;
 }
 .btn:hover{
-    background-color: #FFCCCC;
+    background-color: #434755;
     transform: scale(1.3);
 }
 
@@ -103,7 +103,7 @@ p{
 
 .sau{
     padding: 50px 0;
-    background: #fff9f9;
+    background: #1c2338;
 }
 
 .box-container{
@@ -137,7 +137,7 @@ p{
 
 .box-container .box h3{
     font-size: 20px;
-    color: #000000;
+    color: #fff;
 }
 
 .box-container .box p{
