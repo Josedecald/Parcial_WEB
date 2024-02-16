@@ -112,7 +112,7 @@ button{
 }
 
 button:hover{
-    opacity: .9;
+    opacity: calc(.9);
 }
 
 .register{
