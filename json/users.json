@@ -1,7 +1,7 @@
 {
     "users": [
-        {"username": "Sebastian", "password": "admin12345", "type": "adminitrador"},
-        {"username": "Jose", "password": "admin12345", "type": "adminitrador"},
+        {"username": "Sebastian", "password": "admin12345", "type": "administrador"},
+        {"username": "Jose", "password": "admin12345", "type": "administrador"},
         {"username": "Miguel", "password": "12345", "type": "usuario"},
         {"username": "Luisa", "password": "77777", "type": "usuario"}
     ]
