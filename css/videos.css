@@ -117,13 +117,19 @@ p{
 }
 
 .box-container .box{
-    height: 170px;
-    width: 270px;
+    height: 300px;
+    width: 400px;
     background: #ffffff;
     text-align: center;
     border-radius: 20px;
     box-shadow: 0 5px 5px rgba(0, 0, 0, .3);
     margin: 20px;
+    
+}
+
+.box-container .box iframe{
+    border-radius: 20px;
+    margin-bottom: 60px;
 }
 
 .box-container .box i{
@@ -140,7 +146,7 @@ p{
 
 .box-container .box h3{
     font-size: 20px;
-    color: #fff;
+    color: #1c2338;
 }
 
 .box-container .box p{
