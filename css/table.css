@@ -108,6 +108,7 @@ table{
     font-size: 14px;
     table-layout: fixed;
     border-collapse: collapse;
+    
 }
 
 thead{
@@ -117,12 +118,14 @@ thead{
 th{
     padding: 20px 15px;
     font-weight: 700;
+
 }
 
 td{
     padding: 15px;
     border-bottom: solid 2px rgba(255, 255, 255, .2);
     background: #1c2338;
+    
 }
 
 tbody tr{

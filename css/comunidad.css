@@ -287,8 +287,21 @@ p{
     display: flex;
     align-items: center;
     margin-top: 10px;
-    margin: 10px 500px;
+    margin: 10px 50%;
 }
+
+#like:hover {
+    color: #be1818;
+}
+
+#comment:hover {
+    color: #a0bde4;
+}
+
+#share:hover {
+    color: #f9de36;
+}
+
 
 .like-button, .comment-button, .share-button {
     background-color: #1c2338;
@@ -297,11 +310,12 @@ p{
     cursor: pointer;
     padding: 5px 10px;
     font-size: 14px;
+    margin: 2px;
+    border-radius: 10px;
 }
 
 .like-button:hover, .comment-button:hover, .share-button:hover {
     background-color: #161f3a;
-    border-radius: 5px;
 }
 
 
