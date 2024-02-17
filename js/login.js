@@ -49,5 +49,5 @@ let validateLogin = () => {
 
 
 let redirectUser = () =>{
-    window.location.href = '../index.html';
+    window.location.href = "html\tableAdmin.html";
 }
