@@ -5,26 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/94686504bc.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../css/login.css">
-    <title>Document</title>
+    <title>SereneMind</title>
 </head>
 <body>
     
     <section>
         <div class="login-container">
             <div class="form">
-                <form action="#">
+                <form>
                     <h2>Iniciar sesión</h2>
 
                     <div class="input-container">
                         <i class="fa-solid fa-user"></i>
-                        <label for="username"></label>
-                        <input type="text" placeholder="Usuario" id="username" required>                    
+                        <label for="txt_username"></label>
+                        <input type="text" placeholder="Usuario" id="txt_username" required>                    
                     </div>
 
                     <div class="input-container">
                         <i class="fa-solid fa-lock"></i>
-                        <label for="password"></label>
-                        <input type="password" placeholder="Contraseña" id="password" required>                    
+                        <label for="txt_password"></label>
+                        <input type="password" placeholder="Contraseña" id="txt_password" required>                    
                     </div>
 
                     <div class="forgot">    
@@ -34,7 +34,7 @@
                         </label>
                     </div>
                     <div>
-                        <button value="Enter" onclick="validateLogin()">Acceder</button>
+                        <button type="submit" id="acceder">Acceder</button>
     
                         <div class="register">
                             <p>No tengo cuenta <a href="#">Crear una</a></p>
