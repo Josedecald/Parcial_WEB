@@ -1,53 +1,31 @@
-console.log('Vinculado');
+console.log("Vinculado");
 
-let users = [];
+const validateLogin = () => {
+  const user= document.getElementById("txt_user").value.trim(); // Renombrar la variable para evitar la redeclaración
+  const pass = document.getElementById("txt_pass").value.trim(); // Renombrar la variable para evitar la redeclaración
 
-//  se utiliza fetch para obtener los datos de usuarios
-fetch('../json/users.json')
-    .then(response => {
-        if (!response.ok){
-            throw new Error('Error al obtener datos de usuarios.');
+  if (user=== "" || pass === "") { // Simplificar la lógica de validación de campos vacíos
+    alert("Por favor, rellene ambos espacios para iniciar sesión");
+    return; // Detener la ejecución de la función si hay campos vacíos
+  }
+
+  fetch("../json/users.json")
+    .then((res) => res.json())
+    .then((data) => {
+      const users = data.users; // Acceder al array de usuarios dentro del objeto
+      const foundUser = users.find(us => us.username === user && us.password === pass);
+      if (foundUser) {
+        if (foundUser.type === "0") { // Corregir la comparación de tipo de usuario
+          window.location.href = "../html/tableAdmin.html"; // Corregir la ruta de redirección
+        } else if (foundUser.type === "1") { // Corregir la comparación de tipo de usuario
+          window.location.href = "../index.html"; // Corregir la ruta de redirección
         }
-        return response.json();
+      } else {
+        alert("Nombre de usuario o/y contraseña incorrectos");
+      }
     })
-    .then(json => {
-        console.log('Datos de usuarios obtenidos:', json);
-        // Verificamos si los datos son un arreglo
-        if (Array.isArray(json)) {
-            // Si son un array, los asignamos directamente a users
-            users = json;
-            console.log('Usuarios cargados:', users);
-        } else {
-            // Si no son un array, los metemos en uno
-            users = [json];
-            console.log('Usuarios cargados:', users);
-        }
-    })
-    .catch(err => console.error('Solicitud fallida: ', err));
-
-
-let validateLogin = () => {
-    let user = document.getElementById("txt_user").value;
-    let pass = document.getElementById("txt_pass").value;
-
-    if (user === '' || pass === '') {
-        alert('Por favor, ingrese nombre de usuario y contraseña.');
-        return false;
-    }
-
-    // se hace la búsqueda de usuario y contraseña directamente aquí
-    let foundUser = users.find(u => u.username === user && u.password === pass);
-    if (foundUser) {
-        alert('Inicio de sesión exitoso');
-        redirectUser();
-    } 
-    else {
-        alert('Credenciales incorrectas');
-    }
+    .catch((error) => {
+      console.error("Error en el JSON", error);
+      alert("Ocurrió un error al cargar los datos de usuario. Por favor, inténtelo de nuevo más tarde."); // Proporcionar una alerta en caso de error
+    });
 };
-
-
-
-let redirectUser = () =>{
-    window.location.href = "html\tableAdmin.html";
-}

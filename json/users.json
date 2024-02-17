@@ -1,8 +1,8 @@
 {
     "users": [
-        {"username": "Sebastian", "password": "admin12345", "type": "administrador"},
-        {"username": "Jose", "password": "admin12345", "type": "administrador"},
-        {"username": "Miguel", "password": "12345", "type": "usuario"},
-        {"username": "Luisa", "password": "77777", "type": "usuario"}
+        {"username": "sebastian", "password": "admin12345", "type": "0"},
+        {"username": "Jose", "password": "admin12345", "type": "0"},
+        {"username": "Miguel", "password": "12345", "type": "1"},
+        {"username": "Luisa", "password": "77777", "type": "1"}
     ]
 }
