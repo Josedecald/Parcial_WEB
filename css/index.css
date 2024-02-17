@@ -59,9 +59,9 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 60vh;
-    background: url(/img/OIP.jfif) no-repeat center;
-    background-size: cover;
+    height: 50vh;
+    background: url(/img/OIP-OT_gjNcR_-transformed.jpeg) no-repeat center;
+    background-size:cover;
 }
 
 .title{
@@ -118,12 +118,20 @@ p{
 
 .box-container .box{
     height: 170px;
-    width: 270px;
+    width: 400px;
     background: #ffffff;
     text-align: center;
     border-radius: 20px;
     box-shadow: 0 5px 5px rgba(0, 0, 0, .3);
     margin: 20px;
+}
+
+
+.box-container .box p{
+    color: #181f36;
+    margin: 0px 15px;
+    font-weight: 500;
+
 }
 
 .box-container .box i{
@@ -144,8 +152,9 @@ p{
 }
 
 .box-container .box p{
-    padding: 0 15px;
-    font-size: 16px;
+    font-size: 18px;
+    color: #1c2338;
+    padding: 0;
 }
 
 #Tvideos{
@@ -160,7 +169,7 @@ p{
 }
 .about{
     background: #f9de36;
-    padding: 50px 0;
+    padding: 150px 0;
 }
 
 .box-container2{
@@ -208,24 +217,6 @@ p{
 .box-container2 .box .stars i{
     font-size: 15px;
     color:#fff;
-}
-
-.contact{
-    padding: 50px;
-    background: #1c2338;
-}
-.contact h2{
-    padding-top: 500px;
-}
-#formLabel{
-    color: #fff;
-}
-
-.form-section{
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 500px;
-    margin-left: 1000px;
 }
 
 .footer-section{
