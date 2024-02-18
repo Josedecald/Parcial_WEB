@@ -35,6 +35,17 @@
             Esta es nuestra seleccion de videos diarios.
         </p>
         <body>
+            <form id="videoForm" autocomplete="off">
+                <input type="text" id="videoUrl1" placeholder="URL del video 1">
+                <button type="button" onclick="agregarVideo(1)">Cargar</button><br>
+    
+                <input type="text" id="videoUrl2" placeholder="URL del video 2">
+                <button type="button" onclick="agregarVideo(2)">Cargar</button><br>
+    
+                <input type="text" id="videoUrl3" placeholder="URL del video 3">
+                <button type="button" onclick="agregarVideo(3)">Cargar</button>
+            </form>
+    
             <!-- Contenedores para los videos -->
             <div class="box-container">
                 <div class="box">
