@@ -34,7 +34,7 @@ const obtained_data = (event) => {
 
 };
 
-document.getElementById('contactForm').addEventListener('click', obtained_data ); 
+document.getElementById('contactForm').addEventListener('submit', obtained_data ); 
 
 // Llamar a la función para que el evento se registre cuando se cargue la página
 //obtained_data();
