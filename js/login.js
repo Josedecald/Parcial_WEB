@@ -18,7 +18,7 @@ const validateLogin = () => {
         if (foundUser.type === "0") { // Corregir la comparación de tipo de usuario
           window.location.href = "../html/tableAdmin.html"; // Corregir la ruta de redirección
         } else if (foundUser.type === "1") { // Corregir la comparación de tipo de usuario
-          window.location.href = "../index.html"; // Corregir la ruta de redirección
+          window.location.href = "../html/indexLoginusers.html"; // Corregir la ruta de redirección
         }
       } else {
         alert("Nombre de usuario o/y contraseña incorrectos");
