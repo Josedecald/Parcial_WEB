@@ -4,7 +4,7 @@ const validateLogin = () => {
   const user= document.getElementById("txt_user").value.trim(); // Renombrar la variable para evitar la redeclaración
   const pass = document.getElementById("txt_pass").value.trim(); // Renombrar la variable para evitar la redeclaración
 
-  if (user=== "" || pass === "") { // Simplificar la lógica de validación de campos vacíos
+  if (user== "" || pass == "") { // Simplificar la lógica de validación de campos vacíos
     alert("Por favor, rellene ambos espacios para iniciar sesión");
     return; // Detener la ejecución de la función si hay campos vacíos
   }
@@ -13,11 +13,11 @@ const validateLogin = () => {
     .then((res) => res.json())
     .then((data) => {
       const users = data.users; // Acceder al array de usuarios dentro del objeto
-      const foundUser = users.find(us => us.username === user && us.password === pass);
+      const foundUser = users.find(us => us.username == user && us.password == pass);
       if (foundUser) {
-        if (foundUser.type === "0") { // Corregir la comparación de tipo de usuario
+        if (foundUser.type == "0") { // Corregir la comparación de tipo de usuario
           window.location.href = "../html/adminhub.html"; // Corregir la ruta de redirección
-        } else if (foundUser.type === "1") { // Corregir la comparación de tipo de usuario
+        } else if (foundUser.type == "1") { // Corregir la comparación de tipo de usuario
           window.location.href = "../html/indexLoginusers.html"; // Corregir la ruta de redirección
         }
       } else {
